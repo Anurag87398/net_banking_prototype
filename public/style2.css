@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navBarTwo{
+    background-color: rgba(0, 0, 0, 0.482);
+    color: rgb(180, 179, 179);
+    list-style: none;
+    overflow: hidden;
+}
+
+.navBarTwo li{
+    float: left;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.navBarTwo #account{
+    float: right;
+}
+
+.navBarTwo .navTwo:hover{
+    /* background-color: rgb(118, 15, 15); */
+    background-image: linear-gradient(to bottom right, #000000 0%, #121313 100%);
+}
+
+.navBarTwo #logo{
+    font-size: 47px;
+    padding: 0px 10px;
+    width: 17%;
+    text-align: left;
+    color: #ff8c00;
+    font-family: sans-serif;
+    text-shadow: 10px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  footer p {
+    color: #ccc;
+    margin-top: 7px;
+  }
+
+  body{
+    /* background-color: rgb(32, 32, 57); */
+    /* https://wallpapercave.com/wp/wp10524130.jpg */
+    background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("https://wallpapercave.com/wp/wp10524130.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    /* overflow: hidden; */
+   
+    
+  }
+
+  .dabbaHolder{
+    display: flex;
+  }
+
+  .dabba{
+    background-color: rgba(32, 31, 31, 0.792);
+    /* background-image: linear-gradient(to bottom right, #28292b, rgba(255, 255, 255, 0.119)); */
+    /* backdrop-filter: 10px; */
+
+    height: 469px;
+    width: 500px;
+    margin: 60px;
+    border-radius: 10px;
+  }
+
+  #profileHolder{
+    /* align-items: center; */
+    justify-content: center;
+    /* background-color: green; */
+  }
+  #profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .balanceCard{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+  .balanceCard h1{
+    color: white;
+  }
+ #iski{
+    margin: 0;
+  }
+
+  .balanceCard img{
+    height: 300px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  @keyframes rupeeMove {
+    from {
+      /* left: -1000px; */
+      transform: scaleX(1);
+    }
+    to {
+        transform: scaleX(-1);
+    }
+  }
+
+  .balanceCard i{
+    color: white;
+    height: 70%;
+    width: 100%;
+    font-size: 150px;
+    /* background-color: green; */
+    padding-top: 30px;
+    /* padding-top: 50px; */
+    margin-bottom: 20px;
+    animation: rupeeMove 2s ease alternate-reverse infinite;
+  }
+  .balanceCard hr{
+    margin: 20px 0;
+    border: 0px;
+    border-bottom: solid 2px grey;
+  }
+  .balanceCard h1{
+    margin-top: 10px;
+  }
+  .fundTransferCard{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    text-align: center;
+  }
+  .fundTransferCard h1{
+    margin-bottom: 20px;
+    color: #ff8c00;
+    font-family: sans-serif;
+  }
+  .fundTransferCard input{
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    /* border-bottom: grey; */
+    color: white;
+    margin: 10px;
+    border-bottom: 2px solid grey;
+    transition:  border-bottom .35s ease-in-out
+  }
+  .fundTransferCard input::placeholder{
+    color: rgba(255, 255, 255, 0.556);
+    opacity: 1;
+  }
+  .fundTransferCard input:focus{
+    outline: none;
+  }
+
+.fundTransferCard input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(255, 255, 255, 0.556);
+    transition: color .35s ease-in-out;
+    opacity: 1; /* Firefox */
+}
+
+.fundTransferCard input:focus{
+    border-bottom: 2px solid #ff8c00;
+    outline: none;
+}
+
+.fundTransferCard input:focus::placeholder{
+    color: #ff8c00;
+}
+  .fundTransferCard button{
+    padding: 7px;
+    width: 100px;
+    border-radius: 5px;
+    color: white;
+    background: #d47806;
+    font-size: 20px;
+    margin: 30px auto;
+  }
+  .fundTransferCard button:hover{
+    background-color: #a35c05;
+    cursor: pointer;
+  }
+  .fundTransferCard button:active{
+    background-color: #824904;
+    cursor: pointer;
+  }
+
+.choice{
+  display: block;
+  border-radius: 5px;
+  color: white;
+  background: #d47806;
+  font-size: 16px;
+  /* margin: 0; */
+  margin-top: 10px;
+  /* padding-top: 10px; */
+  /* height: 100px; */
+}
+
+.choice:hover{
+  background-color: #a35c05;
+  cursor: pointer;
+}
+.choice:active{
+  background-color: #824904;
+  cursor: pointer;
+}
+.accContainer {
+  /* justify-content: center; */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  /* padding-top: 20px; */
+  margin-top: 20px;
+  height: 100px;
+  overflow: scroll;
+}
+.accContainer::-webkit-scrollbar{
+  display: none;
+}
+.accContainer .acc{
+  flex: 1;
+  padding: 10px;
+  width: 70%;
+  border-radius: 5px;
+  background-color: rgb(59, 58, 58);
+}
+.acc:hover{
+  cursor: pointer;
+  background-color: rgb(121, 118, 118);
+}
+.acc:active{
+  cursor: pointer;
+  background-color: rgb(104, 103, 103);
+}
+.acc:focus{
+  background-color: rgb(135, 131, 131);
+}
+
+.choice{
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 10px;
+  height: 30px;
+}
+
+  /* #two{
+    background-color: red;
+  }
+  #three{
+    background-color: blue;
+  } */
+  /* .homeIcon{
+    color: #ff8c00;
+    font-size: 30px;
+} */
+
+/* .navBar{
+    background-color: gray;
+    overflow: hidden;
+    list-style: none;
+}
+.navBar li{
+    float: left;
+    padding: 20px 10px;
+    height: 100%;
+    width: 7%;
+    text-align: center;
+}
+
+.navBar li:hover{
+    background-image: linear-gradient(to bottom right, #EB5757, #000000);
+}
+
+.navBar #logo{
+    font-size: 50px;
+    padding: 0px 10px;
+    width: 17%;
+    text-align: left;
+    /* padding-top: 5px; */
+/* }
+
+.navBar #logo:hover{
+    background-image: none; 
+}
+
+.navBar #profile{
+    float: right;
+} */ 
